@@ -1,8 +1,8 @@
+
+// Pokemon adventure!
 yourName = prompt("Hello there! Welcome to the world of Pokemon! My name is Prof. Oak! What is your name?");
 answer = prompt("Right, so your name is " + yourName + ". Your very own Pokemon legend is about to unfold. A world of Pokemon and adventure awaits. Are you ready? (y/n)");
 
-
-// Adventure starts
 if (answer === 'y') {
   prompt("Alright, let's go!");
   answer = prompt("You appear in your room filled with tons of Pokemon memorabilia. There is a stairway out of your house. Do you want to look around your room(r) or go downstairs? (d)");
@@ -41,7 +41,7 @@ if (answer === 'y') {
           break;
       }
     }
-  // Your Mom
+  // Mom
   } else {
     mom = prompt("You go downstairs and see Mom there. Do you talk to her? (y/n)");
     if (mom === 'y') {
@@ -51,19 +51,19 @@ if (answer === 'y') {
 
         // Go Outside
         } else if (chores === 'y') {
-          prompt("Great. You can go now!");
-          prompt("You go outside and try to walk in the grass");
-          prompt("A voice yells from behind, 'Hey! It's unsafe!' says Professor Oak. 'Wild Pokemon walk in the grass. You need your own Pokemon. Follow me!'");
-          prompt("You follow Professor Oak to his lab");
+            prompt("Great. You can go now!");
+            prompt("You go outside and try to walk in the grass");
+            prompt("A voice yells from behind, 'Hey! It's unsafe!' says Professor Oak. 'Wild Pokemon walk in the grass. You need your own Pokemon. Follow me!'");
+            prompt("You follow Professor Oak to his lab");
 
           // Choose starter Pokemon
-          startPokemon = prompt("Alright, " + yourName + ". There are 3 Pokemon here. They are inside these Poke balls. In my old age, I have 3 left, but you can only have one! Which do you choose? Charmandar - the fire type (c) Squirtle (s) - the water type - Bulbasaur (b) - the grass type.");
+          startPokemon = prompt("Alright, " + yourName + ". There are 3 Pokemon here. They are inside these Poke balls. In my old age, I have 3 left, but you can only have one! Which do you choose? Charmandar (c) - the fire type Squirtle (s) - the water type - Bulbasaur (b) - the grass type.");
 
             if (startPokemon === 'c') {
-            prompt("So! You want Charmandar as your first Pokemon? Very well!");
-            prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Squirtle!");
-            prompt("You turn to walk away.");
-            prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
+              prompt("So! You want Charmandar as your first Pokemon? Very well!");
+              prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Squirtle!");
+              prompt("You turn to walk away.");
+              prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
 
             //  Battle with Gary
             var hp = 21;
@@ -74,8 +74,8 @@ if (answer === 'y') {
                 hp = hp-7;
                 prompt("Squirtle takes 7 damage. Squirtle has " + hp +" HP left!");
               } else if (attack === 't') {
-                prompt("Charmandar used Tail Whip!");
-                prompt("It wasn't very effective. Squirtle has " + hp +" HP left!");
+                  prompt("Charmandar used Tail Whip!");
+                  prompt("It wasn't very effective. Squirtle has " + hp +" HP left!");
                   hp = hp-0;
               }
             }
@@ -84,10 +84,10 @@ if (answer === 'y') {
 
           // Squirtle
           } else if (startPokemon === 's') {
-          prompt("So! You want Squirtle as your first Pokemon? Very Well!");
-          prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Bulbasaur!");
-          prompt("You turn to walk away.");
-          prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
+              prompt("So! You want Squirtle as your first Pokemon? Very Well!");
+              prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Bulbasaur!");
+              prompt("You turn to walk away.");
+              prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
 
           // Battle with Gary
           var hp = 21;
@@ -98,9 +98,9 @@ if (answer === 'y') {
               hp = hp-7;
               prompt("Charmandar takes 7 damage. Charmandar has " + hp +" HP left!");
             } else if (attack === 't') {
-              prompt("Squirtle used Tail Whip!");
-              prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
-              hp = hp-0;
+                prompt("Squirtle used Tail Whip!");
+                prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
+                hp = hp-0;
             }
           }
           prompt("Enemy Charmandar fainted! Squirtle gains 45 experience points! " + yourName + " defeated Gary!");
@@ -108,10 +108,10 @@ if (answer === 'y') {
 
           // Bulbasaur
         } else if (startPokemon === 'b') {
-          prompt("So! You want Bulbasaur as your first Pokemon? Very Well!");
-          prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Charmandar!");
-          prompt("You turn to walk away.");
-          prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
+            prompt("So! You want Bulbasaur as your first Pokemon? Very Well!");
+            prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Charmandar!");
+            prompt("You turn to walk away.");
+            prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
 
           // Battle with Gary
           var hp = 21;
@@ -122,9 +122,9 @@ if (answer === 'y') {
               hp = hp-7;
               prompt("Charmandar takes 7 damage. Charmandar has " + hp +" HP left!");
             } else if (attack === 'g') {
-              prompt("Bulbasaur used Growl!");
-              hp = hp-0;
-              prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
+                prompt("Bulbasaur used Growl!");
+                hp = hp-0;
+                prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
             }
           }
           prompt("Enemy Charmandar fainted! Bulbasaur gains 45 experience points! " + yourName + " defeated Gary!");
@@ -133,9 +133,9 @@ if (answer === 'y') {
     }
     // Professor Oak
     } else {
-      prompt("You go outside and try to walk in the grass");
-      prompt("A voice yells from behind, 'Hey! It's unsafe!' says Professor Oak. 'Wild Pokemon walk in the grass. You need your own Pokemon. Follow me!'");
-      prompt("You follow Professor Oak to his lab");
+        prompt("You go outside and try to walk in the grass");
+        prompt("A voice yells from behind, 'Hey! It's unsafe!' says Professor Oak. 'Wild Pokemon walk in the grass. You need your own Pokemon. Follow me!'");
+        prompt("You follow Professor Oak to his lab");
 
       // Choose starter Pokemon
       startPokemon = prompt("Alright, " + yourName + ". There are 3 Pokemon here. They are inside these Poke balls. In my old age, I have 3 left, but you can only have one! Which do you choose? Charmandar - the fire type (c) Squirtle (s) - the water type - Bulbasaur (b) - the grass type.");
@@ -156,9 +156,9 @@ if (answer === 'y') {
               hp = hp-7;
               prompt("Squirtle takes 7 damage. Squirtle has " + hp +" HP left!");
             } else if (attack === 't') {
-              prompt("Charmandar used Tail Whip!");
-              prompt("It wasn't very effective. Squirtle has " + hp +" HP left!");
-              hp = hp-0;
+                prompt("Charmandar used Tail Whip!");
+                prompt("It wasn't very effective. Squirtle has " + hp +" HP left!");
+                hp = hp-0;
             }
           }
           prompt("Enemy Squirtle fainted! Charmandar gains 45 experience points! " + yourName + " defeated Gary!");
@@ -166,10 +166,10 @@ if (answer === 'y') {
 
         // Squirtle
         } else if (startPokemon === 's') {
-          prompt("So! You want Squirtle as your first Pokemon? Very Well!");
-          prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Bulbasaur!");
-          prompt("You turn to walk away.");
-          prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
+            prompt("So! You want Squirtle as your first Pokemon? Very Well!");
+            prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Bulbasaur!");
+            prompt("You turn to walk away.");
+            prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
           // Battle with Gary
           var hp = 21;
           while (hp > 0) {
@@ -179,9 +179,9 @@ if (answer === 'y') {
               hp = hp-7;
               prompt("Bulbasaur takes 7 damage. Bulbasaur has " + hp +" HP left!");
             } else if (attack === 'w') {
-              prompt("Squirtle used Tail Whip!");
-              hp = hp-0;
-              prompt("It wasn't very effective. Bulbasaur has " + hp +" HP left!");
+                prompt("Squirtle used Tail Whip!");
+                hp = hp-0;
+                prompt("It wasn't very effective. Bulbasaur has " + hp +" HP left!");
             }
           }
           prompt("Enemy Bulbasaur fainted! Squirtle gains 45 experience points! " + yourName + " defeated Gary!");
@@ -189,10 +189,10 @@ if (answer === 'y') {
 
         // Bulbasaur
         } else if (startPokemon === 'b') {
-          prompt("So! You want Bulbasaur as your first Pokemon? Very Well!");
-          prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Charmandar!");
-          prompt("You turn to walk away.");
-          prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
+            prompt("So! You want Bulbasaur as your first Pokemon? Very Well!");
+            prompt("Gary comes from behind. 'I'll take this one then!' Gary received a Charmandar!");
+            prompt("You turn to walk away.");
+            prompt("Gary: Wait " + yourName + "! Let's check out our Pokemon. Come on! Let's battle!");
 
           // Battle with Gary
           var hp = 21;
@@ -203,9 +203,9 @@ if (answer === 'y') {
               hp = hp-7;
               prompt("Charmandar takes 7 damage. Charmandar has " + hp +" HP left!");
             } else if (attack === 'g') {
-              prompt("Bulbasaur used Growl!");
-              hp = hp-0;
-              prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
+                prompt("Bulbasaur used Growl!");
+                hp = hp-0;
+                prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
             }
           }
           prompt("Enemy Charmandar fainted! Bulbasaur gains 45 experience points! " + yourName + " defeated Gary!");
