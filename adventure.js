@@ -45,9 +45,9 @@ if (answer === 'y') {
   } else {
     mom = prompt("You go downstairs and see Mom there. Do you talk to her? (y/n)");
     if (mom === 'y') {
-      chores = prompt("Right. All boys leave home some day. Professor Oak is next door and is looking for you. Before you go, did you do your chores yet? (y/n)");
+      chores = prompt("Mom: Right. All boys leave home some day. Professor Oak is next door and is looking for you. Before you go, did you do your chores yet? (y/n)");
         if (chores === 'n') {
-          prompt("You can't go without doing your chores " +yourName + "! Get to work!");
+          prompt("Mom: You can't go without doing your chores " +yourName + "! Get to work!");
 
         // Go Outside
         } else if (chores === 'y') {
@@ -97,7 +97,7 @@ if (answer === 'y') {
               prompt("Squirtle used Tackle!");
               hp = hp-7;
               prompt("Charmandar takes 7 damage. Charmandar has " + hp +" HP left!");
-            } else if (attack === 't') {
+            } else if (attack === 'w') {
                 prompt("Squirtle used Tail Whip!");
                 prompt("It wasn't very effective. Charmandar has " + hp +" HP left!");
                 hp = hp-0;
